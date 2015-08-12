@@ -11,9 +11,8 @@ public class MyWorkItemHandler implements WorkItemHandler {
   @Override
   public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
     System.out.println("### executeWorkItem");
-    if (workItem.getParameters().isEmpty()) {
 
-    } else {
+    if (! workItem.getParameters().isEmpty()) {
       workItem.getParameters().forEach((k, v) -> {
         System.out.println(" - " + k + " => " + v);
       });

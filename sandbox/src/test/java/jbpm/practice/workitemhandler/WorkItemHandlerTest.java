@@ -42,7 +42,6 @@ public class WorkItemHandlerTest {
     kSession.getWorkItemManager().completeWorkItem(workItem.getId(), null);
     assertThat(processInstance.getState(), is(ProcessInstance.STATE_COMPLETED));
 
-    // After
     auditLogger.close();
   }
 }
