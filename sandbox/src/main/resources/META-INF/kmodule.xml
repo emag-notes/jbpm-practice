@@ -6,4 +6,8 @@
     <ksession name="WorkItemHandlerTestKS"/>
   </kbase>
 
+  <kbase name="TimerTestKB" packages="jbpm.practice.timer">
+    <ksession name="TimerTestKS"/>
+  </kbase>
+
 </kmodule>
